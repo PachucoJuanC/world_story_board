@@ -1,0 +1,139 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  width: 20%;
+  height: auto; 
+}
+
+/* Style the login and sign up buttons */
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button5 {
+  background-color: #331900;
+  color: white;
+  border: 2px solid #555555;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.button:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Style the content */
+.content {  
+  grid-area: header;
+  background-image: url("https://images.pexels.com/photos/1098526/pexels-photo-1098526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-family: 'Arvo', serif;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 45px;
+  color: #331900; 
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  font-family: 'Arvo', serif;
+}
+
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  text-align: center;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  text-align: center;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  background-color: #ddd;
+  padding: 10px;
+  font-family: 'Arvo', serif;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #331900;;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  font-family: 'Arvo', serif;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #331900;
+  color: red;
+}
+
