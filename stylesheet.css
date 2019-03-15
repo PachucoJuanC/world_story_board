@@ -50,6 +50,7 @@ img {
 /* Style the content */
 .content {  
   grid-area: header;
+  overflow: hidden;
   background-image: url("https://images.pexels.com/photos/1098526/pexels-photo-1098526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-color: #f1f1f1;
   padding: 30px;
@@ -83,7 +84,7 @@ img {
 .middle,
 .right {
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  overflow: hidden;
   font-family: 'Arvo', serif;
 }
 
