@@ -4,6 +4,7 @@
 <title>World Story Board</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="script.js"></script>
 <link rel="stylesheet" href="stylesheet.css">
 <link href="https://fonts.googleapis.com/css?family=Anton|Arvo" rel="stylesheet">
 
@@ -19,9 +20,11 @@
 <header class="header">
   <h2>A curious and unpredictable repository of stories.</h2>
   <div>
-    <button class="button button5">Login</button>
-    <button class="button button5">Sign Up</button>
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+    
   </div>
+
   </div>
 </header>
 
@@ -34,17 +37,50 @@
   <div class="left" style="background-color:#aaa;">
   <iframe src="http://free.timeanddate.com/clock/i6oa6k98/n237/szw110/szh110/hocf00/hbw0/hfcc00/cf100/hnca32/fan3/fas22/facfff/fdi86/mqcfff/mqs2/mql3/mqw4/mqd70/mhcfff/mhs2/mhl3/mhw4/mhd70/hhcfff/hhs2/hmcfff/hms2/hsc333" frameborder="0" width="110" height="110"></iframe>
   <h3>SHANGHAI</h3>
-  <p>To my child's eyes, which had seen nothing else, Shanghai was a waking dream where everything I could imagine had already been taken to its extreme. - J. G. Ballard</p>
   </div>
+
   <div class="middle" style="background-color:#bbb;">
   <iframe src="http://free.timeanddate.com/clock/i6oa6k98/n179/szw110/szh110/hocf00/hbw0/hfcc00/cf100/hnca32/fan3/fas22/facfff/fdi86/mqcfff/mqs2/mql3/mqw4/mqd70/mhcfff/mhs2/mhl3/mhw4/mhd70/hhcfff/hhs2/hmcfff/hms2/hsc333" frameborder="0" width="110" height="110"></iframe>
   <h3>NEW YORK</h3>
-  <p>"The true New Yorker secretly believes that people living anywhere else have to be, in some sense, kidding." – John Updike</p>
-  </div>  
+  </div>
+
   <div class="right" style="background-color:#ccc;">
   <iframe src="http://free.timeanddate.com/clock/i6oa6k98/n195/szw110/szh110/hocf00/hbw0/hfcc00/cf100/hnca32/fan3/fas22/facfff/fdi86/mqcfff/mqs2/mql3/mqw4/mqd70/mhcfff/mhs2/mhl3/mhw4/mhd70/hhcfff/hhs2/hmcfff/hms2/hsc333" frameborder="0" width="110" height="110"></iframe>
   <h3>PARIS</h3>
-  <p>“If you are lucky enough to have lived in Paris as a young man, then wherever you go for the rest of your life it stays with you, for Paris is a moveable feast.” – Ernest Hemingway.</p>
+  </div>
+  <!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://images.pexels.com/photos/269810/pexels-photo-269810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+
   </div>
 
 <footer class="footer">
